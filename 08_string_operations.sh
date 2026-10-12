@@ -1,8 +1,12 @@
 #!/bin/bash
 
 # check two string arguments were given
-[[ $# -lt 2 ]] && \
-    echo "Usage: Give two strings as arguments" && exit 1
+if [[ $# -lt 2 ]]
+then
+    echo "Usage: Give two strings as arguments"
+    exit 1
+fi
+
 str1=$1
 str2=$2
 
